@@ -2,7 +2,7 @@
 
 ## Description
 
-Node module to merge two or more directories and collect the filenames.
+Node module to merge two or more directories and collect the filenames.  
 Files can be optionally filtered using a glob pattern.
 
 
