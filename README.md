@@ -28,3 +28,7 @@ The syntax for collecting merged files of two or more directories is as follows:
 ```
 var files = mergeCollectFiles( [ 'directory-one', 'directory-two' ], '**/*.json' );
 ```
+
+## Example
+
+http://runnable.com/VL4rxq7sBR8spJf2/node-merge-collect-files-example-for-node-js
