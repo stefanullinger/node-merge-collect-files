@@ -48,12 +48,12 @@ function mergeCollectFiles( directories, pattern ) {
 
 	directories.forEach( function( directory ) {
 		var foundFiles = getPathFiles( directory, pattern );
-		console.log( 'Files in "' + directory + '": \n', foundFiles, '\n' );
+		//console.log( 'Files in "' + directory + '": \n', foundFiles, '\n' );
 
 		result = extend( result, foundFiles );
 	});
 
-	console.log( 'Merged Files: \n', result, '\n' );
+	//console.log( 'Merged Files: \n', result, '\n' );
 
 	return result;
 }
