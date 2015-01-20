@@ -1,0 +1,30 @@
+{
+  "name": "node-merge-collect-files",
+  "version": "0.1.0",
+  "description": "Merge two or more directories and collect the filenames.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sullinger/node-merge-collect-files.git"
+  },
+  "keywords": [
+    "node",
+    "merge",
+    "directory",
+    "directories",
+    "files"
+  ],
+  "author": "Stefan Ullinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sullinger/node-merge-collect-files/issues"
+  },
+  "homepage": "https://github.com/sullinger/node-merge-collect-files",
+  "dependencies": {
+    "glob": "^4.3.5",
+    "node.extend": "^1.1.3"
+  }
+}
