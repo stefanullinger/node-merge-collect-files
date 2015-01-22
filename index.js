@@ -1,14 +1,14 @@
 var fs = require( 'fs' );
 var path = require( 'path' );
 var extend = require('node.extend');
-var glob = require( 'glob' );
+var glob = require( 'glob-all' );
 
 
 /**
  * Get files of a given path
  */
-function getPathFiles( basePath, pattern ) {
-	pattern = pattern || '**/*';
+function getPathFiles( basePath, patterns ) {
+	patterns = patterns || '**/*';
 
 	var files = {};
 
@@ -23,7 +23,7 @@ function getPathFiles( basePath, pattern ) {
 		throw new Error( '"' + basePath + '" does not exist.' );
 	}
 
-	var filesMatchingPattern = glob.sync( pattern, {
+	var filesMatchingPattern = glob.sync( patterns, {
 		cwd: basePath,
 		nonull: false
 	} );
@@ -43,11 +43,11 @@ function getPathFiles( basePath, pattern ) {
 	return files;
 }
 
-function mergeCollectFiles( directories, pattern ) {
+function mergeCollectFiles( directories, patterns ) {
 	var result = {};
 
 	directories.forEach( function( directory ) {
-		var foundFiles = getPathFiles( directory, pattern );
+		var foundFiles = getPathFiles( directory, patterns );
 		//console.log( 'Files in "' + directory + '": \n', foundFiles, '\n' );
 
 		result = extend( result, foundFiles );

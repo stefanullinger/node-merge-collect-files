@@ -29,6 +29,23 @@ The syntax for collecting merged files of two or more directories is as follows:
 var files = mergeCollectFiles( [ 'directory-one', 'directory-two' ], '**/*.json' );
 ```
 
+The glob pattern can also be an array.
+
+```
+var files = mergeCollectFiles( [ 'directory-one', 'directory-two' ], ['**/*.json', '**/*.js'] );
+```
+
 ## Example
 
 http://runnable.com/VL4rxq7sBR8spJf2/node-merge-collect-files-example-for-node-js
+
+
+## Release History
+
+__0.2.0__
+
+  * Added support for multiple glob patterns.
+
+__0.1.0__
+
+  * Defined mergeCollectFiles method.
