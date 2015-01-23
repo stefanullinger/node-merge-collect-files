@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/sullinger/node-merge-collect-files",
   "dependencies": {
-    "glob-all": "^1.1.0",
+    "glob-all": "^3.0.1",
     "node.extend": "^1.1.3"
   }
 }

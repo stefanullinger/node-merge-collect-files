@@ -42,7 +42,15 @@ http://runnable.com/VL4rxq7sBR8spJf2/node-merge-collect-files-example-for-node-j
 
 ## Release History
 
+__0.2.3__
+
+  * Fixed version reference of glob-all.
+
 __0.2.2__
+
+  * Removed reference to multiglob.
+
+__0.2.1__
 
   * Removed reference to multiglob.
 
