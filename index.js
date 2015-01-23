@@ -1,7 +1,7 @@
 var fs = require( 'fs' );
 var path = require( 'path' );
 var extend = require('node.extend');
-var glob = require( 'globby' );
+var glob = require( 'glob-all' );
 
 
 /**

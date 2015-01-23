@@ -44,7 +44,7 @@ http://runnable.com/VL4rxq7sBR8spJf2/node-merge-collect-files-example-for-node-j
 
 __0.2.1__
 
-  * Switched from multiglob (unmaintained) to globby.
+  * Removed reference to multiglob.
 
 __0.2.0__
 
