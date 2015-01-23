@@ -1,6 +1,6 @@
 {
   "name": "node-merge-collect-files",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Merge two or more directories and collect the filenames.",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/sullinger/node-merge-collect-files",
   "dependencies": {
-    "glob-all": "^3.0.1",
+    "globby": "^1.1.0",
     "multiglob": "^0.2.1",
     "node.extend": "^1.1.3"
   }

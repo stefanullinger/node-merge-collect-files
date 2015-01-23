@@ -6,7 +6,6 @@ Node module to merge two or more directories and collect the filenames.
 Files can be optionally filtered using a glob pattern.
 
 
-
 ## Usage
 
 To install this module in your current working directory (which should already contain a package.json), run
@@ -35,12 +34,17 @@ The glob pattern can also be an array.
 var files = mergeCollectFiles( [ 'directory-one', 'directory-two' ], ['**/*.json', '**/*.js'] );
 ```
 
+
 ## Example
 
 http://runnable.com/VL4rxq7sBR8spJf2/node-merge-collect-files-example-for-node-js
 
 
 ## Release History
+
+__0.2.1__
+
+  * Switched from multiglob (unmaintained) to globby.
 
 __0.2.0__
 
