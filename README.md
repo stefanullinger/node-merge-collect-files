@@ -34,6 +34,21 @@ The glob pattern can also be an array.
 var files = mergeCollectFiles( [ 'directory-one', 'directory-two' ], ['**/*.json', '**/*.js'] );
 ```
 
+If you would like to pass some glob options, use the third parameter.
+
+```
+var files = mergeCollectFiles( [ 'directory-one', 'directory-two' ], ['**/*.json', '**/*.js'], { dot: false } );
+```
+
+The default glob options are:
+
+```
+{
+	cwd: basePath,
+	nonull: false,
+	dot: true
+}
+```
 
 ## Example
 
@@ -41,6 +56,10 @@ http://runnable.com/VL4rxq7sBR8spJf2/node-merge-collect-files-example-for-node-j
 
 
 ## Release History
+
+__0.3.0__
+
+  * Added support for setting glob options.
 
 __0.2.3__
 

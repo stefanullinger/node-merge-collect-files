@@ -1,6 +1,6 @@
 {
   "name": "node-merge-collect-files",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Merge two or more directories and collect the filenames.",
   "main": "index.js",
   "scripts": {
