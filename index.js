@@ -29,7 +29,9 @@ function getPathFiles( basePath, patterns, globOptions ) {
 		dot: true
 	}, globOptions || {} );
 
-	var filesMatchingPattern = glob.sync( patterns, globOptions );
+	// glob.sync seems to manipulate the given patterns, so we create a local copy
+	var thePatterns = Array.isArray(patterns) ? patterns.concat([]) : patterns;
+	var filesMatchingPattern = glob.sync( thePatterns, globOptions );
 
 	filesMatchingPattern.forEach( function( file ) {
 		if( fs.lstatSync( path.join( basePath, file ) ).isFile() ) {

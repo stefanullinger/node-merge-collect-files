@@ -57,6 +57,10 @@ http://runnable.com/VL4rxq7sBR8spJf2/node-merge-collect-files-example-for-node-j
 
 ## Release History
 
+__0.3.1__
+
+  * Fixed patterns param in glob.sync to be local copy of patterns as glob.sync seems to mutate this param.
+
 __0.3.0__
 
   * Added support for setting glob options.
